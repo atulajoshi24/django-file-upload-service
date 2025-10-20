@@ -80,9 +80,6 @@ def upload_file_secure(request):
 
         return HttpResponse(f"Upload OK. Saved as: {saved_path} with actual file name : {sanitized_file}(mime={sniffed})")
 
-    # GET: simple form
-    return render(request, "simple_uploader/upload.html")
-
 
 def upload_file(request):
     print('inside upload_file')
