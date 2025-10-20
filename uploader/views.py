@@ -112,5 +112,3 @@ def upload_file(request):
 
         return HttpResponse(f"Upload OK. Saved as: {saved_path} with actual file name : {file_name} (mime={sniffed})")
 
-    # GET: simple form
-    return render(request, "simple_uploader/upload.html")
